@@ -5,4 +5,4 @@ discord.js | @discordjs - https://github.com/discordjs/discord.js
 Scvrlae (@datonescvr1ae) | Owner, main programmer
 
 # Images
-Profile Picture | Couldn't find original @ - https://pin.it/5MOjQSyDr
+Profile picture | Couldn't find original @ - https://pin.it/5MOjQSyDr

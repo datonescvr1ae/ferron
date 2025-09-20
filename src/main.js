@@ -24,6 +24,18 @@ function onStart() {
        client.login(Token);
 }
 
+client.on(Events.InteractionCreate, async interaction => {
+       if (!interaction.isChatInputCommand()) return;
+
+       const command = client.commands.get(interaction.commandName);
+
+       try {
+              await command.execute(interaction);
+       } catch(error) {
+              console.error("Temporary error log (logger lib soon)");
+       }
+});
+
 client.once(Events.ClientReady, async readyClient => {
        readyClient.user.setPresence({
               activities: [{ name: Presence, type: ActivityType[PresenceType] }],

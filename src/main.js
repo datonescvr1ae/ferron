@@ -26,7 +26,7 @@ function onStart() {
 
 client.once(Events.ClientReady, async readyClient => {
        readyClient.user.setPresence({
-              activities: [{name: Presence, type: ActivityType[PresenceType]}],
+              activities: [{ name: Presence, type: ActivityType[PresenceType] }],
               status: Status
        });
 
